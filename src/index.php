@@ -1,6 +1,6 @@
 <?php
     echo "ciao";
-    echo "casiodai";
+    echo "ciao index";
     $a = 1;
     $b = 2;
     phpinfo();
