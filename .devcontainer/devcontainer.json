@@ -11,7 +11,7 @@
     "3000": { "label": "La mia App (PHP)" },
     "8080": { "label": "phpMyAdmin" }
   },
-  "postCreateCommand": "git config --global --add safe.directory /var/www/html",
+  "postCreateCommand": "git config --global --add safe.directory /var/www/html && rm -f .git/hooks/pre-push",
   "customizations": {
     "vscode": {
       "extensions": [
