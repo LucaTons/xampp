@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 60px 20px;
+}
+
+a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ──────────────────────────────
+   LOGIN / REGISTER
+────────────────────────────── */
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #222;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+form {
+    background: #fff;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+    margin-bottom: 20px;
+    background: #fafafa;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #4a90e2;
+    background: #fff;
+}
+
+button[type="submit"],
+.btn-primary {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: inline-block;
+}
+
+button[type="submit"]:hover,
+.btn-primary:hover {
+    background-color: #357abd;
+}
+
+.auth-footer {
+    margin-top: 18px;
+    font-size: 0.875rem;
+    color: #666;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+}
+
+.error-msg {
+    color: #c0392b;
+    font-size: 0.875rem;
+    margin-bottom: 14px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* ──────────────────────────────
+   DASHBOARD
+────────────────────────────── */
+
+.dashboard-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 420px;
+    overflow: hidden;
+}
+
+.dashboard-card .card-header {
+    padding: 20px 24px 16px;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-card .card-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    max-width: none;
+    width: auto;
+}
+
+.dashboard-card .card-header a.logout-link {
+    font-size: 0.85rem;
+    color: #c0392b;
+}
+
+.dashboard-card .card-header a.logout-link:hover {
+    text-decoration: underline;
+}
+
+.room-list a {
+    display: block;
+    padding: 14px 24px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.97rem;
+    color: #333;
+    transition: background 0.15s;
+}
+
+.room-list a:last-child {
+    border-bottom: none;
+}
+
+.room-list a:hover {
+    background: #f7f9fc;
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+/* ──────────────────────────────
+   CHAT
+────────────────────────────── */
+
+.chat-wrapper {
+    width: 100%;
+    max-width: 620px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.chat-header {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.chat-messages {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    padding: 8px 0;
+}
+
+.message {
+    padding: 10px 24px;
+    border-bottom: 1px solid #f5f5f5;
+    font-size: 0.93rem;
+    line-height: 1.5;
+}
+
+.message:last-child {
+    border-bottom: none;
+}
+
+.message .username {
+    font-weight: 600;
+    color: #4a90e2;
+    margin-right: 4px;
+}
+
+.message .timestamp {
+    font-size: 0.78rem;
+    color: #bbb;
+    margin-left: 8px;
+}
+
+.chat-form {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    padding: 16px 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.chat-form input[type="text"] {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.back-link {
+    font-size: 0.875rem;
+}

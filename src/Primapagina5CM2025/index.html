@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <!--collegamento foglio di stile esterno nella cartella css di nome stile.css-->
+    <link rel="stylesheet" type="text/css" href="css/stile.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prima pagina 5CM</title>
+    <!-- 2. Generare la favicon della scuola ed inserirla nella scheda -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.svg">
+</head>
+<body>
+    <header>
+        <!-- tag da 1 a 7 -->
+        <h1> Marconi Pieralisi - Jesi </h1>
+        <h3> Simulazione del sito della scuola </h3>
+        <nav>   <!-- tag per la navbar barra orizzontale -->
+            <ul>    <!-- Elenco non ordinato -->
+                <li><a href="">Informatica</a></li>
+                <li><a href="">Sistemi e Reti</a></li>
+                <li><a href="">TPSIT</a></li>
+                <li><a href="">Italiano</a></li>
+                <li><a href="">Matematica</a></li>
+                <li><a href="">Inglese</a></li>
+                <li><a href="">Scienze Motorie</a></li>
+                <li><a href="">Storia</a></li>
+                <li><a href="">GPOI</a></li>
+                <li><a href="">Religione</a></li>
+                <li><a href="progettoAnno.html">Progetto dell'anno</a></li>
+             </ul>
+         </nav>
+    </header>
+
+    <!-- 3. Titolo pagina (pagina): Pagina della classe 5CM -->
+    <h1 id="titolo">Pagina della classe 5CM</h1>
+ 
+    <!-- Foglio di stile incorporato-->
+    <style type="text/css">
+        /* regole applicate alla tabella */
+        table, th, td
+        {
+            padding: 1em;
+            width: fit-content;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        img
+        {
+            border-radius: 8px;
+            display: block;
+            /* immagine al centro 
+            margin-left: auto;
+            margin-right: auto;*/
+            width: 50%;
+        }
+
+        /* # hashtag indica l'attributo ID 
+           può essere utilizzato  una unica volta
+        */
+        #titolo
+        {
+            text-align: center;
+            text-decoration-line: overline underline;
+            text-decoration-color: red;
+        }
+
+        /* . il punto indica la proprietà CLASS 
+         può essere più volte su più tag
+         */
+         .inf {
+         background-color: cornflowerblue;
+        }
+
+        .sis {
+         background-color:chartreuse;
+        }
+
+        .mat {
+         background-color:chocolate;
+        }
+
+        .tps {
+         background-color:magenta;
+        }
+
+        .rel {
+         background-color:brown;
+        }
+
+        .smot {
+         background-color:gold;
+        }
+
+        .ita {
+         background-color:darkorchid;
+        }
+
+        .gpoi {
+         background-color:darkolivegreen;
+        }
+
+        .ing {
+         background-color:springgreen;
+        }
+
+        .ia {
+         background-color:lightgreen;
+        }
+
+        .pot {
+         background-color:silver;
+        }
+
+        .sto{
+            background-color: red;
+        }
+
+    </style>
+
+    <section name="laboratori">     <!-- tag semanico: non visualizzato nella pagina -->
+      <!-- 4. Elenco numerato: elenco dei laboratori di indirizzo (materie di indirizzo) -->
+    <ol>
+      <li>Laboratorio di Informatica 2-21</li>
+      <li>Laboratorio di Sistemi 2-20</li>
+      <li>Laboratorio di Tpsit 2-19</li>
+   </ol>
+    </section>
+
+    <section name="orario" class="orario">
+        <p>Orario di lezione</p>
+        <table>
+            <tr>    <!-- riga -->
+                <th>Orario</th> <!-- riga di intestazione -->
+                <th>Lunedì</th>
+                <th>Martedì</th>
+                <th>Mercoledì</th>
+                <th>Giovedì</th>
+                <th>Venerdì</th>
+                <th>Sabato</th>
+            </tr>
+
+            <tr>    <!-- riga con la prima ora -->
+                <td>1 ora</td>      <!-- tdata -->
+                <td rowspan="2" class="inf">Informatica</td>      <!-- lun -->
+                <td rowspan="2" class="tps">TPSIT</td>      <!-- mart -->
+                <td class="sis">Sistemi</td>      <!-- merc -->
+                <td class="tps">TPSIT</td>      <!-- giov -->
+                <td class="gpoi">GPOI</td>      <!-- ven -->
+                <td class="inf">Informatica</td>      <!-- sab -->
+            </tr>
+
+            <tr>    <!-- riga con le seconde ore -->
+                <td>2 ora</td>      <!-- tdata -->
+                <td class="ing">Inglese</td>      <!-- merc -->
+                <td rowspan="2" class="smot">Scienze Motorie</td>      <!-- giov -->
+                <td class="mat">Matematica</td>      <!-- ven -->
+                <td rowspan="2" class="gpoi">GPOI</td>      <!-- sab -->
+            </tr>
+
+            <tr>    <!-- riga con le terze ore -->
+                <td>3 ora</td>      <!-- tdata -->
+                <td rowspan="2" class="sis">Sistemi</td>      <!-- lun -->
+                <td class="pot"> REC/POT </td>      <!-- mart -->
+                <td class="ita">Italiano</td>      <!-- merc -->
+                <td rowspan="2" class="ing"> Inglese </td>      <!-- ven -->
+            </tr>
+
+            <tr>    <!-- riga con le quarte ore -->
+                <td>4 ora</td>      <!-- tdata -->
+                <td class="sis">Sistemi</td>      <!-- mart -->
+                <td rowspan="3" class="inf">Informatica</td>      <!-- merc -->
+                <td class="sto"> Storia </td>      <!-- giov -->
+                <td class="mat"> Matematica </td>      <!-- sab -->
+            </tr>
+
+            <tr>    <!-- riga con le quinte ore -->
+                <td>5 ora</td>      <!-- tdata -->
+                <td class="mat">Matematica</td>      <!-- lun -->
+                <td class="ita">Italiano</td>      <!-- mart -->
+                <td class="rel"> Religione </td>      <!-- giov -->
+                <td rowspan="2" class="ita"> Italiano </td>      <!-- ven -->
+                <td class="ia"> IA </td>      <!-- sab -->
+            </tr>
+
+            <tr>    <!-- riga con le seste ore -->
+                <td>6 ora</td>      <!-- tdata -->
+                <td class="sto">Storia</td>      <!-- lun -->
+            </tr>
+        </table>
+    </section>
+
+    <section name="immagini">
+        <br>    <!-- mette riga vuota -->
+     <!-- 7. Link: link del sito della scuola, che si deve aprire in un'altra finestra -->
+
+     <a href="http://www.iismarconipieralisi.it" target="_blank">Link al sito del IIS Marconi Pieralisi</a>
+     <br>
+
+     <!-- 8. Immagine: immagine della scuola, con il collegamento al sito della scuola -->
+     <a href="http://www.iismarconipieralisi.it" target="_blank"><img src="img/iisMarconiPieralisi.jpeg" alt="IIS Marconi Pieralisi"></a>
+
+     <br>
+    </section>  
+    
+
+    <footer>
+        <p>
+        Indirizzo:
+        Via Raffaello Sanzio, 8
+        60035 - JESI (AN)
+        </p>
+
+    </footer>
+</body>
+</html>

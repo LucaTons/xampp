@@ -1,0 +1,103 @@
+/*
+*
+{
+    color: red;
+}
+    
+h1
+{
+    color: white;
+    background-color: black;
+}
+*/
+
+/*margin di default 8px da strumenti per sviluppatori*/
+body
+{
+    margin: auto;
+}
+
+/*Problema di visualizzazione del titolo*/
+header h1
+{
+    margin: auto;
+}
+
+/* regola per evitare di vedere aspetto del link sottolineatura e colore blu*/
+header a
+{
+    text-decoration: none;
+    color: white;
+}
+
+header
+{
+    margin: auto;
+    padding-top: 15px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+nav
+{
+    margin-top: 15px;
+    background-color: aqua;
+    color: black;
+}
+
+/*bavbar con la lista non ordinata*/
+nav ul
+{
+    display: inline-flex;   /* disposizione orizzontale */
+    list-style-type: none;  /* nasconde i punti */
+}
+
+/* Distanziazione elementi della lista */
+nav li
+{
+    padding: 5px;
+}
+
+nav a
+{
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+}
+
+/* NON NECESSARIO IN QUESTO CASO
+nav a:visited
+{
+    background-color: cyan;
+}*/
+
+nav a:hover
+{
+    /*background-color: rgb(250, 250, 250);*/
+    text-decoration: red underline !important;
+}
+
+nav a:active
+{
+    background-color: blue;
+}
+
+section
+{
+    padding-left: 30px;
+}
+
+footer
+{
+    padding: 20px;
+    background-color: blue;
+    font-size: 0.5m;
+    color: white;
+}
+
+/*classe con .nomeclasse*/
+.orario
+{
+    color: blue;
+}
